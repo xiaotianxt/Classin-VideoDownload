@@ -1,62 +1,39 @@
-classin.api17.php%3faction%3dgetLessonRecordInfo
-https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/f1ae1f355285890802953529925/f0.mp4
-classin.api21.php%3faction%3dgetLessonRecordInfo
-classin.api.php%3faction%3dgetLessonRecordInfo
-https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/19905f995285890803563953894/f0.mp4
-classin.api11.php%3faction%3dgetLessonRecordInfo
-https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/f4417a3f5285890802875718878/f0.mp4
-classin.api6.php%3faction%3dgetLessonRecordInfo
-https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/e956ca885285890801620752942/f0.mp4
-https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/0c934bcb5285890801624006679/f0.mp4
-classin.api1.php%3faction%3dgetLessonRecordInfo
-https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/d65c1c865285890803307761711/f0.mp4
-classin.api16.php%3faction%3dgetLessonRecordInfo
-https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/cdb49c385285890802997186453/f0.mp4
-classin.api20.php%3faction%3dgetLessonRecordInfo
-https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/073330ad5285890803271624873/f0.mp4
-https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/36bc6a5a5285890803275468984/f0.mp4
-Save as video/地理学基础(19-20学年第2学期)2020-05-21 18:01:39.mp4
-https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/8f6f2b325285890803276972480/f0.mp4
-Save as video/地理学基础(19-20学年第2学期)2020-05-21 18:55:13.mp4
-classin.api10.php%3faction%3dgetLessonRecordInfo
-https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/1f69b2ba5285890802998393940/f0.mp4
-Save as video/地理信息系统原理(19-20学年第2学期)2020-05-14 09:52:25.mp4
-classin.api7.php%3faction%3dgetLessonRecordInfo
-https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/5366ec665285890803523034547/f0.mp4
-Save as video/地理信息系统原理(19-20学年第2学期)2020-05-28 09:39:42.mp4
-classin.api9.php%3faction%3dgetLessonRecordInfo
-https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/cdd47d405285890803260607321/f0.mp4
-Save as video/地理信息系统原理(19-20学年第2学期)2020-05-21 09:43:55.mp4
-classin.api15.php%3faction%3dgetLessonRecordInfo
-https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/246c32685285890803220991282/f0.mp4
-Save as video/遥感概论(19-20学年第2学期)2020-05-20 08:51:13.mp4
-classin.api2.php%3faction%3dgetLessonRecordInfo
-https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/0a56adb95285890803193892299/f0.mp4
-Save as video/数据库概论(19-20学年第2学期)2020-05-19 14:45:25.mp4
-classin.api4.php%3faction%3dgetLessonRecordInfo
-classin.api18.php%3faction%3dgetLessonRecordInfo
-https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/2ab982535285890803672818284/f0.mp4
-classin.api13.php%3faction%3dgetLessonRecordInfo
-https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/afcde7b15285890803572597810/f0.mp4
-Save as video/遥感概论(19-20学年第2学期)2020-05-29 16:42:33.mp4
-classin.api14.php%3faction%3dgetLessonRecordInfo
-https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/7d4f144c5285890803483913092/f0.mp4
-Save as video/遥感概论(19-20学年第2学期)2020-05-27 08:39:11.mp4
-classin.api8.php%3faction%3dgetLessonRecordInfo
-https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/5b64f9eb5285890803411186944/f0.mp4
-Save as video/地理信息系统原理(19-20学年第2学期)2020-05-25 09:44:42.mp4
-classin.api3.php%3faction%3dgetLessonRecordInfo
-https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/e9922f4e5285890803036448565/f0.mp4
-classin.api22.php%3faction%3dgetLessonRecordInfo
-https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/a0c1e93c5285890803147865798/f0.mp4
-classin.api19.php%3faction%3dgetLessonRecordInfo
-https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/e077fbe75285890803535313671/f0.mp4
-Save as video/地理学基础(19-20学年第2学期)2020-05-28 16:52:56.mp4
-https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/78614fb35285890803537256576/f0.mp4
-Save as video/地理学基础(19-20学年第2学期)2020-05-28 18:07:38.mp4
-classin.api5.php%3faction%3dgetLessonRecordInfo
-https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/acb500d35285890801793174377/f0.mp4
-Save as video/数据库概论(19-20学年第2学期)2020-04-24 11:37:12.mp4
-classin.api12.php%3faction%3dgetLessonRecordInfo
-https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/143585955285890802101425400/f0.mp4
-Save as video/地理信息系统原理(19-20学年第2学期)2020-04-30 09:45:57.mp4
+9
+https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/de5cb9d95285890805070879793/f0.mp4
+https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/bbf48ed05285890805073475456/f0.mp4
+11
+https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/be7783d45285890805215849718/f0.mp4
+https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/4a8ef0695285890805217265182/f0.mp4
+7
+https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/6d1dea915285890804999041308/f0.mp4
+https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/581556d85285890805000155321/f0.mp4
+6
+https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/451e442f5285890804961230776/f0.mp4
+https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/278914185285890804964054967/f0.mp4
+1
+https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/67cd254f5285890804642737723/f0.mp4
+https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/f19222275285890804644058033/f0.mp4
+10
+https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/135f46695285890805183077332/f0.mp4
+https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/b87dd7875285890805185505710/f0.mp4
+8
+https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/f7e92c0e5285890805029933670/f0.mp4
+https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/707ab3215285890805031406813/f0.mp4
+4
+https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/1e28052c5285890804784369010/f0.mp4
+https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/4afec07f5285890804828964785/f0.mp4
+3
+https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/21137d7d5285890804791258986/f0.mp4
+https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/7e981ba25285890804792988863/f0.mp4
+12
+https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/de665a4e5285890805291216864/f0.mp4
+https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/371e0ef25285890805292729471/f0.mp4
+2
+https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/529d8a2b5285890804676151740/f0.mp4
+https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/ab78e3d95285890804677683383/f0.mp4
+13
+https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/08cfc0325285890805328991722/f0.mp4
+https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/7cca0f075285890805330276362/f0.mp4
+5
+https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/84cd3c095285890804931401089/f0.mp4
+https://1252412222.vod2.myqcloud.com/794b4a11vodbj1252412222/3abcdb365285890804930588618/f0.mp4
