@@ -2,7 +2,7 @@ import requests
 import json
 
 def aria2_download(durl, name, dir):
-    url = 'http://192.168.0.109:6800/jsonrpc'
+    url = 'http://127.0.0.1:6800/jsonrpc'
     download_url = durl
     json_rpc = json.dumps({
         'id': '',
@@ -11,4 +11,4 @@ def aria2_download(durl, name, dir):
         'params': [[download_url], {'dir': dir, 'out': name}]
     })
     response = requests.post(url=url, data=json_rpc)
-    print(response)
+    print(response.text)

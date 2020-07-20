@@ -1,0 +1,1 @@
+([('gui', '/Users/tian/Classin-VideoDownload/dist/gui', 'EXECUTABLE')],)

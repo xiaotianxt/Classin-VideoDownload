@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['gui.py'],
-             pathex=['/Users/tian/Desktop/GetVideos'],
+             pathex=['/Users/tian/Classin-VideoDownload'],
              binaries=[],
              datas=[],
              hiddenimports=[],

@@ -1,39 +1,48 @@
 import tkinter as tk
 import main
-import os
+import os, sys, time
 from tkinter import filedialog
+
 
 downlist = []
 filedir = ""
 downpath = ""
 
-window = tk.Tk()
-window.title("Video Download")
+windowMain = tk.Tk()
+windowMain.title("Video Download")
 
-sw = window.winfo_screenwidth()
+sw = windowMain.winfo_screenwidth()
 #得到屏幕宽度
-sh = window.winfo_screenheight()
+sh = windowMain.winfo_screenheight()
 #得到屏幕高度
-ww = 600
+ww = 700
 wh = 600
 #窗口宽高为100
 x = (sw-ww) / 2
 y = (sh-wh) / 2
-window.geometry("%dx%d+%d+%d" % (ww, wh, x, y)) # 窗口居中布置,大小为ww wh
+windowMain.geometry("%dx%d+%d+%d" % (ww, wh, x, y)) # 窗口居中布置,大小为ww wh
 
 def open_folder():
     global filedir
-    filedir = filedialog.askdirectory(title='Select a folder', initialdir=(os.getcwd()))
+    filedir = filedialog.askdirectory(title='Select a folder', initialdir=(os.path.dirname(sys.argv[0])))
     filelist = main.get_filelist(filedir)
-    filelist = sorted(filelist)
+    filelist.sort()
+    listboxFilelist.delete(0, tk.END)
+    listboxDatelist.delete(0, tk.END)
     for item in filelist:
-        lb.insert('end', item)
+        listboxFilelist.insert('end', item[1])
+        listboxDatelist.insert('end', item[0])
+    
+    listbox_click()
 
 def select_all():
-    lb.select_set(0, tk.END)
+    listboxFilelist.select_set(0, tk.END)
+    listbox_click()
+    
 
 def unselect_all():
-    lb.select_clear(0, tk.END)
+    listboxFilelist.select_clear(0, tk.END)
+    listbox_click()
 
 def select_storepath():
     global downpath
@@ -41,64 +50,96 @@ def select_storepath():
 
 def download_selected():
     downlist = []
-    for i in range(lb.size()):
-        if (lb.select_includes(i)):
-            main.downloadFile(filedir +'/'+ lb.get(i), downpath)
+    for i in range(listboxFilelist.size()):
+        if (listboxFilelist.select_includes(i)):
+            main.downloadFile(filedir +'/'+ listboxFilelist.get(i), downpath)
+
+def listbox_click(*event):
+    urllist = get_urllist()
+    textResult.delete('0.0', tk.END)
+    textResult.insert(tk.END, "Video Numbers: " + "%02d" % len(urllist))
+    
 
 def get_urllist():
     urllist = []
-    for i in range(lb.size()):
-        if (lb.select_includes(i)):
-            urllist.extend(main.get_urllist(filedir + '/' + lb.get(i)))
+    for i in range(listboxFilelist.size()):
+        if (listboxFilelist.select_includes(i)):
+            if(listboxFilelist.get(i)[0]=='.'):
+                continue
+            urllist.extend(main.get_urllist(filedir + '/' + listboxFilelist.get(i)))
     print(urllist)
-    t.delete('0.0', tk.END)
+    textUrllist.delete('0.0', tk.END)
     for i in urllist:
-        print(i)
-        t.insert(tk.END, i[0] + '\n\n')
+        textUrllist.insert(tk.END, i[0] + '\n\n')
+    textResult.delete('0.0', tk.END)
+    textResult.insert(tk.END, "Video Numbers: " + "%02d" % len(urllist))
+    return urllist
+
+def copy_all():
+    data = textUrllist.get('0.0', tk.END)
+    os.system("echo '%s' | pbcopy" % data)
 
 
-menubar = tk.Menu(window)
-filemenu = tk.Menu(menubar, tearoff=0)
-menubar.add_cascade(label='File', menu=filemenu)
+menubarMenubar = tk.Menu(windowMain)
+filemenu = tk.Menu(menubarMenubar, tearoff=0)
+menubarMenubar.add_cascade(label='File', menu=filemenu)
 filemenu.add_command(label='Open Folder', command=open_folder)
 
 row = 1
 
-b1 = tk.Button(window, text="Open Folder", command=open_folder)
-b1.grid(row=row, column=0, sticky=tk.W)
+buttonOpenFolder = tk.Button(windowMain, text="Open Folder", command=open_folder, width=20)
+buttonOpenFolder.grid(row=row, column=1, sticky=tk.W)
 row = row + 1
 
-b2 = tk.Button(window, text="Select All", command=select_all)
-b2.grid(row=0, column=1)
+buttonSelectAll = tk.Button(windowMain, text="Select All", command=select_all, width=20)
+buttonSelectAll.grid(row=row - 1, column=4)
 
+buttonUnselectAll = tk.Button(windowMain, text="Unselect All", command=unselect_all, width=20)
+buttonUnselectAll.grid(row=row, column=4)
 
-b2_ = tk.Button(window, text="Unselect All", command=unselect_all)
-b2_.grid(row=0, column=2)
+buttonCopyToClipboard = tk.Button(windowMain, text="Copy to Clipboard", command=copy_all, width=20)
+buttonCopyToClipboard.grid(row=row + 1, column=4)
 
-
-b3 = tk.Button(window, text="Download Selected", command=download_selected)
-b3.grid(row=row, column=0, sticky=tk.W)
+buttonDownloadSelected = tk.Button(windowMain, text="Download Selected", command=download_selected, width=20)
+buttonDownloadSelected.grid(row=row, column=1, sticky=tk.W)
 row = row + 1
 
-b4 = tk.Button(window, text="Select Store Path", command=select_storepath)
-b4.grid(row=row, column=0, sticky=tk.W)
+buttonSelectStorePath = tk.Button(windowMain, text="Select Store Path", command=select_storepath, width=20)
+buttonSelectStorePath.grid(row=row, column=1, sticky=tk.W)
 row = row + 1
 
-b5 = tk.Button(window, text="Get Urllist", command=get_urllist)
-b5.grid(row=row, column=0, sticky=tk.W)
+buttonGetUrllist = tk.Button(windowMain, text="Get Urllist", command=get_urllist, width=20)
+buttonGetUrllist.grid(row=row, column=1, sticky=tk.W)
 row = row + 1
 
-lb = tk.Listbox(window, height=30, selectmode=tk.MULTIPLE)
-lb.grid(row=1, column = 1, rowspan=4, columnspan=2)
 
-t = tk.Text(window, height = 38, width=30, relief="solid")
-t.grid(row=1, column=4, rowspan=4)
-scroll = tk.Scrollbar()
-scroll.grid(row=1,column=5, rowspan=4)
-scroll.config(command=t.yview)
-t.config(yscrollcommand=scroll.set)
 
-window.grid_columnconfigure(3, minsize=10)
-window.config(menu = menubar)
+listboxFilelist = tk.Listbox(windowMain, height=20, width=15, selectmode=tk.MULTIPLE, font=("TkTextFont", 15))
+listboxFilelist.grid(row=row, column = 2)
+listboxFilelist.bind('<<ListboxSelect>>', listbox_click)
+row = row + 1
 
-window.mainloop()
+listboxDatelist = tk.Listbox(windowMain, height=20, width=20, font=("TkTextFont", 15))
+listboxDatelist.grid(row = row - 1, column=1)
+row = row + 1
+
+textUrllist = tk.Text(windowMain, height = 20, width=30, relief="solid", font=("TkTextFont", 15))
+textUrllist.grid(row=row - 2, column=4)
+scrollUrllist = tk.Scrollbar()
+scrollUrllist.grid(row=row - 2,column=5, sticky=tk.E + tk.W)
+scrollUrllist.config(command=textUrllist.yview)
+textUrllist.config(yscrollcommand=scrollUrllist.set)
+
+textResult = tk.Text(windowMain, height = 1, width = 30, relief="solid")
+textResult.grid(row=row - 3, column=4)
+textResult.insert(tk.END, "Video Numbers: ")
+
+windowMain.grid_columnconfigure(2, minsize=10)
+windowMain.grid_columnconfigure(0, minsize=30)
+
+for i in range(row - 2):
+    windowMain.grid_rowconfigure(i, minsize=30)
+
+windowMain.config(menu = menubarMenubar)
+
+windowMain.mainloop()
